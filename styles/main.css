@@ -1,0 +1,106 @@
+
+.modal-panel {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .7);
+    display: none;
+    z-index: 9999;
+    transition: opacity .5s ease;
+  }
+  
+  .modal-panel.active {
+    display: block;
+  }
+  
+  .modal-content-pane {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    transform: translateY(-50%);
+    top: 50%;
+    animation: modalSlide .5s ease;
+  }
+  
+  @keyframes modalSlide {
+    from {
+      transform: translateY(-100%); }
+  
+    to {
+      transform: translateY(-50%); }
+  }
+  
+  nav > ul {
+    transition: all .5s ease;
+    list-style: none;
+  }
+  
+  @media (min-width: 736px) {
+    .menu-active {
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+      min-width: 200px;
+    }
+  }
+  
+  @media (max-width: 735px) {
+  
+    nav {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 250px;
+      height: 100vh;
+      background: #fff;
+      transition: left .5s ease;
+      z-index: 1000;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, .2);
+    }
+  
+    .menu-active {
+      left: 0;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  #js-triggers {
+    position: relative;
+    z-index: 5000;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background: #fff;
+  }
+  
+  #js-triggers a {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #js-triggers a:hover {
+    background: #e0e0e0;
+  }
+  
+  
