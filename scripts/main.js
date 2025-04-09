@@ -11,7 +11,6 @@ const components = {
 
 let isMenuOpen = false;
 let isModalOpen = false;
-
 const toggleMenu = (e) => {
     e.preventDefault();
     isMenuOpen = !isMenuOpen;

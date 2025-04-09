@@ -1,0 +1,25 @@
+{
+    "name": "assignment-3--intro-to-internet-programming--cs-275--spring-2025-dont-work-here",
+    "version": "1.0.0",
+    "description": "☞ **Plagiarism in any form will result in failing the entire course. You’ve been duly warned.** ☜",
+    "main": "gulpfile.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.26.10",
+      "@babel/preset-env": "^7.26.9",
+      "browser-sync": "^3.0.4",
+      "cssnano": "^7.0.6",
+      "gulp": "^4.0.2",
+      "gulp-babel": "^8.0.0",
+      "gulp-eslint": "^6.0.0",
+      "gulp-postcss": "^10.0.0",
+      "gulp-stylelint": "^13.0.0",
+      "gulp-uglify": "^3.0.2"
+    }
+  }
+  
