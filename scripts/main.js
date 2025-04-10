@@ -4,7 +4,7 @@ const triggers = {
 };
 
 const components = {
-    menu: document.querySelector(`nav > ul`),
+    menu: document.querySelector(`nav`),
     modal: document.querySelector(`.modal-panel`),
     content: document.querySelector(`.modal-content`),
 };
